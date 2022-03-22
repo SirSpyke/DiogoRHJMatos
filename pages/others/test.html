@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../assets/js/main.js"></script>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link href="../../assets/Libs/fontawesome-free-5.13.0-web/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="../../assets/img/tab_logo.png">
+  <title>Diogo Matos</title>
+</head>
+
+<body id="recipesbody">
+  <div id="small">
+    <div id="navsmall">
+      <div id="logosm">
+        <a href="../../index.html">
+          <img src="../../assets/img/nav_logo.png" alt="Page logo">
+        </a>
+      </div>
+      <div id="tabs">
+        <a href="#" style="display: none;">Food</a>
+        <a href="../../index.html">Recipes</a>
+        <a href="pages/others/test.html" class="active">Test</a>
+        <a href="#" style="display: none;">Places to try</a>
+      </div>
+      <div id="menu">
+        <a href="javascript:void(0);" id="hambu" onclick="Hamburguer()">
+          <i class="fas fa-hamburger"></i>
+        </a>
+        <a href="javascript:void(0);" id="cross" onclick="Hamburguer()">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="big">
+    <div id="navbig">
+      <div id="logob">
+        <a href="../../index.html">
+          <img src="../../assets/img/nav_logo.png" alt="Page logo">
+        </a>
+      </div>
+      <ul>
+        <li><a href="#" style="display: none;">Places to try</a></li>
+        <li><a href="../../index.html">Recipes</a></li>
+        <a href="pages/others/test.html" class="active">Test</a>
+        <li><a href="#" style="display: none;">Food</a></li>
+      </ul>
+    </div>
+  </div>
+  <article id="contentWrapper">
+    <h1>Test</h1>
+    <div id="contentMargin">
+      <!--
+          <p>
+            <i class="fa fa-calculator fa-lg primary icon-medium" aria-hidden="true"></i>
+            <h2>Step 1 - Edible dosage calculator</h2>
+          </p>
+          <p>How much weed do you have?</p>
+          <p>slider</p>
+          <p><i class="fa fa-minus-circle fa-lg warning" aria-hidden="true"></i> 3.5 grams +</p>
+          <br/>
+          <i class="fa fa-calculator fa-lg primary icon-medium" aria-hidden="true"></i>
+                <h2>Step 1 - Edible dosage calculator</h2>
+                
+                <div id="calculator-widget">
+              <div class="calculator-item">
+                <p class="subtitle">How much weed do you have?</p>
+                <div class="slider slider-horizontal" id="success-bar"><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 12.1864%;"></div><div class="slider-track-high" style="right: 0px; width: 87.8136%;"></div></div><div class="tooltip tooltip-main top hide" role="presentation" style="left: 12.1864%;"><div class="tooltip-arrow"></div><div class="tooltip-inner">3.5</div></div><div class="tooltip tooltip-min top hide" role="presentation"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max hide top" role="presentation" style=""><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0.1" aria-valuemax="28" style="left: 12.1864%;" aria-valuenow="3.5" tabindex="0"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0.1" aria-valuemax="28" style="left: 0%;" aria-valuenow="0.1" tabindex="0"></div></div><input id="grams-slider" type="text" data-slider-id="success-bar" data-slider-min="0.1" data-slider-max="28" data-slider-step="0.1" data-slider-value="3.5" data-slider-tooltip="hide" style="display: none;" data-value="3.5" value="3.5">
+            
+                  <div class="text-right">
+                    <p>
+                      <a href="#" id="decrease-quantity">
+                        <i class="fa fa-minus-circle fa-lg warning" aria-hidden="true"></i>
+                      </a>
+                      <input id="grams-input" type="number" step="any" class="calculator-input" onchange="updateQuantity(this.value)"> <span id="grams-quantity-label">grams</span>
+                      <a href="#" id="increase-quantity">
+                        <i class="fa fa-plus-circle fa-lg success" aria-hidden="true"></i>
+                      </a>
+                    </p>
+                  </div>
+              </div>
+          <br/>
+          <p>How strong is your weed?</p>
+          <p>(14% average) | <input type="button" id="" value="NOT SURE?"/></p>
+          <p>slider</p>
+          <p>- THC: 14 % +</p>
+          <br/>
+          <p>How many portions you want?</p>
+          <p>slider</p>
+          <p>- 50 +</p>
+          <br/>
+          <p>icon Check your dose</p>
+          <p>icon Full recipe will have |490.0 mg| of THC</p>
+          <p>icon Each portion will have |9.80 mg|</p>
+          <p>icon THRESHOLD DOSE</p>
+          <br/>
+          <p>icon Positive Effects</p>
+          <p>|relaxation| |stress reduction| |mood lift| |giggling| |laughing|</p>
+          <br/>
+          <p>icon Negative Effects</p>
+          <p>|lightheadedness|</p>
+          <br/>
+          <p>You may or may not feel all the effects listed*</p>
+
+
+          <input type="button" id="test" value="Click Test!"/> -->
+
+      <!--Header-->
+      <div class="containerEdibles">
+        <h2>
+          <i class="fa fa-calculator fa-lg primary icon-medium" aria-hidden="true"></i>
+          Step 1 - Edible dosage calculator
+        </h2>
+
+        <!--Calculator-->
+        <div id="calculator-widget">
+
+          <!--Quantity-->
+          <div class="calculator-item">
+            <p class="subtitle">How much weed do you have?</p>
+            <div class="slider slider-horizontal" id="success-bar">
+              <div class="slider-track">
+                <div class="slider-track-low" style="left: 0px; width: 0%;"></div>
+                <div class="slider-selection" style="left: 0%; width: 12.1864%;"></div>
+                <div class="slider-track-high" style="right: 0px; width: 87.8136%;"></div>
+              </div>
+              <div class="tooltip tooltip-main top hide" role="presentation" style="left: 12.1864%;">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">3.5</div>
+              </div>
+              <div class="tooltip tooltip-min top hide" role="presentation">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner"></div>
+              </div>
+              <div class="tooltip tooltip-max hide top" role="presentation" style="">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner"></div>
+              </div>
+              <div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0.1" aria-valuemax="28"
+                style="left: 12.1864%;" aria-valuenow="3.5" tabindex="0"></div>
+              <div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0.1"
+                aria-valuemax="28" style="left: 0%;" aria-valuenow="0.1" tabindex="0"></div>
+            </div>
+            <input id="grams-slider" type="text" data-slider-id="success-bar" data-slider-min="0.1" data-slider-max="28"
+              data-slider-step="0.1" data-slider-value="3.5" data-slider-tooltip="hide" style="display: none;"
+              data-value="3.5" value="3.5">
+
+
+            <div class="text-right">
+              <p>
+                <a href="#" id="decrease-quantity">
+                  <i class="fa fa-minus-circle fa-lg warning" aria-hidden="true"></i>
+                </a>
+                <input id="grams-input" type="number" step="any" class="calculator-input"
+                  onchange="updateQuantity(this.value)"> <span id="grams-quantity-label">grams</span>
+                <a href="#" id="increase-quantity">
+                  <i class="fa fa-plus-circle fa-lg success" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!--Potency-->
+          <div class="calculator-item-large">
+            <p class="subtitle">How strong is your weed?</p>
+            <span class="bottomtip">(14% average)</span>
+            <a class="label-calculator" data-toggle="modal" href="#" data-target="#myModal">
+              <span class="badge badge-secondary">
+                NOT SURE?
+              </span>
+            </a>
+            <div class="slider slider-horizontal" id="success-bar">
+              <div class="slider-track">
+                <div class="slider-track-low" style="left: 0px; width: 0%;"></div>
+                <div class="slider-selection" style="left: 0%; width: 13.8298%;"></div>
+                <div class="slider-track-high" style="right: 0px; width: 86.1702%;"></div>
+              </div>
+              <div class="tooltip tooltip-main top hide" role="presentation" style="left: 13.8298%;">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">14</div>
+              </div>
+              <div class="tooltip tooltip-min top hide" role="presentation">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner"></div>
+              </div>
+              <div class="tooltip tooltip-max hide top" role="presentation" style="">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner"></div>
+              </div>
+              <div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="1" aria-valuemax="95"
+                style="left: 13.8298%;" aria-valuenow="14" tabindex="0"></div>
+              <div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="1" aria-valuemax="95"
+                style="left: 0%;" aria-valuenow="1" tabindex="0"></div>
+            </div>
+            <input id="strength-slider" type="text" data-slider-id="success-bar" data-slider-min="1"
+              data-slider-max="95" data-slider-step="1" data-slider-value="14" data-slider-tooltip="hide"
+              style="display: none;" data-value="14" value="14">
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="reference"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Reference for weed potency</h2>
+                    <a class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>WEED TYPE</th>
+                          <th>% (potency)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Low quality</td>
+                          <td>5%-10%</td>
+                        </tr>
+                        <tr>
+                          <td>Medium quality</td>
+                          <td>10%-15%</td>
+                        </tr>
+                        <tr>
+                          <td>Top Shelf</td>
+                          <td>15%-40%</td>
+                        </tr>
+                        <tr>
+                          <td>Concentrates</td>
+                          <td>35%-95%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn" data-dismiss="modal">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <p class="text-right">
+              <a href="#" id="decrease-strength">
+                <i class="fa fa-minus-circle fa-lg warning" aria-hidden="true"></i>
+              </a>
+              THC: <input id="strength-input" type="number" step="any" class="calculator-input"
+                onchange="updateStrength(this.value)"> %
+              <a href="#" id="increase-strength">
+                <i class="fa fa-plus-circle fa-lg success" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
+
+          <div class="calculator-item">
+            <p class="subtitle">How many portions you want?</p>
+            <div class="slider slider-horizontal" id="success-bar">
+              <div class="slider-track">
+                <div class="slider-track-low" style="left: 0px; width: 0%;"></div>
+                <div class="slider-selection" style="left: 0%; width: 24.812%;"></div>
+                <div class="slider-track-high" style="right: 0px; width: 75.188%;"></div>
+              </div>
+              <div class="tooltip tooltip-main top hide" role="presentation" style="left: 24.812%;">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">50</div>
+              </div>
+              <div class="tooltip tooltip-min top hide" role="presentation">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner"></div>
+              </div>
+              <div class="tooltip tooltip-max hide top" role="presentation" style="">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner"></div>
+              </div>
+              <div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0.5" aria-valuemax="200"
+                style="left: 24.812%;" aria-valuenow="50" tabindex="0"></div>
+              <div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0.5"
+                aria-valuemax="200" style="left: 0%;" aria-valuenow="0.5" tabindex="0"></div>
+            </div><input id="portion-slider" type="text" data-slider-id="success-bar" data-slider-min="0.5"
+              data-slider-max="200" data-slider-step="1" data-slider-value="30.0" data-slider-tooltip="hide"
+              style="display: none;" data-value="50" value="50">
+
+            <div class="text-right">
+              <p>
+                <a href="#" id="decrease-servings">
+                  <i class="fa fa-minus-circle fa-lg warning" aria-hidden="true"></i>
+                </a>
+                <input id="portion-input" type="number" step="any" class="calculator-input"
+                  onchange="updatePortion(this.value)"> <span id="portion-label"></span>
+                <a href="#" id="increase-servings">
+                  <i class="fa fa-plus-circle fa-lg success" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>
+              <i class="fa fa-flask fa-lg primary icon icon-medium" aria-hidden="true"></i>
+              Step 2 - Check your dose
+            </h2>
+            <p class="calcDes">
+              <i class="fa fa-cookie fa-lg success icon-large" aria-hidden="true"></i>
+              Full recipe will have <span class="badge badge-success badge-label" id="potency-result-total">490.0
+                mg</span> of THC
+            </p>
+
+            <p class="calcDes">
+              <i class="fa fa-cookie-bite fa-lg success icon-large" aria-hidden="true"></i>
+              Each portion will have
+              <span class="badge badge-success badge-label" id="potency-result">9.80 mg</span>
+            </p>
+
+            <p id="highness-level" class="calcDes"><i class="far fa-smile fa-lg success icon-large"
+                aria-hidden="true"></i> THRESHOLD DOSE</p>
+
+            <br>
+
+            <h2>
+              <i class="far fa-laugh fa-lg success icon-large" aria-hidden="true"></i>
+              Positive Effects
+            </h2>
+            <div class="effects" id="positive-effect-details">
+              <p class="badge badge-success badge-label">relaxation</p>
+              <p class="badge badge-success badge-label">stress reduction</p>
+              <p class="badge badge-success badge-label">mood lift</p>
+              <p class="badge badge-success badge-label">giggling</p>
+              <p class="badge badge-success badge-label">laughing</p>
+              <p class="badge badge-success badge-label">creative</p>
+              <p class="badge badge-success badge-label">euphoria</p>
+              <p class="badge badge-success badge-label">reduced nausea</p>
+              <p class="badge badge-success badge-label">increased appetite</p>
+              <p class="badge badge-success badge-label">tasks become more interesting</p>
+              <p class="badge badge-success badge-label">increased awareness of senses</p>
+              <p class="badge badge-success badge-label">philosophical</p>
+              <p class="badge badge-success badge-label">ideas flow easily</p>
+              <p class="badge badge-success badge-label">increase in body/mind connection</p>
+            </div>
+
+            <br>
+            <h2>
+              <i class="far fa-frown fa-lg danger icon-large" aria-hidden="true"></i>
+              Negative Effects
+            </h2>
+            <div class="effects" id="negative-effect-details">
+              <p class="badge badge-danger badge-label">lightheadedness</p>
+              <p class="badge badge-danger badge-label">headaches</p>
+              <p class="badge badge-danger badge-label">paranoia</p>
+              <p class="badge badge-danger badge-label">difficulty with short-term memory</p>
+              <p class="badge badge-danger badge-label">anxiety</p>
+              <p class="badge badge-danger badge-label">time sense altered</p>
+              <p class="badge badge-danger badge-label">nausea</p>
+              <p class="badge badge-danger badge-label">agitation</p>
+              <p class="badge badge-danger badge-label">racing heart</p>
+              <p class="badge badge-danger badge-label">loss of coordination</p>
+              <p class="badge badge-danger badge-label">panic attacks</p>
+            </div>
+
+            <p class="small">You may or may not feel all the effects listed*</p>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </article>
+  <footer>
+    <div id="footer">
+      <p style="display: none;">Copyright © 2020 Diogo Matos</p>
+    </div>
+  </footer>
+</body>
+
+</html>

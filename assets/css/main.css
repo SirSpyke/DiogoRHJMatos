@@ -1,0 +1,829 @@
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #1A2227;
+    font-size: 16px;
+    text-align: left;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+/* Colours */
+.primary {
+    color: #2271B8;  
+}
+
+.secondary {
+    color: #348BD9;
+}
+
+.success {
+    color: #28A745;
+}
+
+.warning {
+    color: #FFC107;
+}
+
+.danger {
+    color: #DC3545;
+}
+
+.dark {
+    color: #1A2227;
+}
+
+.info {
+    color: #6C757D;
+}
+
+.light {
+    color: #E7E7E7;
+}
+
+.white {
+    color: #f9f9f9;
+}
+
+#navsmall {
+    background-color: #1A2227;
+    overflow: hidden;
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#big {
+    display: none;
+}
+
+#navsmall #tabs {
+    display: none;
+}
+
+#navsmall a {
+    color: #f9f9f9;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+#hambu {
+    background: #2271B8;
+    display: block;
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    text-align: center;
+}
+
+#cross {
+    background: #2271B8;
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    text-align: center;
+}
+
+#tabs a:active {
+    background-color: #2271B8;
+    color: #f9f9f9;
+}
+
+.active {
+    background-color: #2271B8;
+    color: #f9f9f9;
+}
+
+#logosm {
+    width: 62px;
+    margin: 0 auto;
+}
+
+#logosm a {
+    margin: 3px;
+    padding: 0;
+}
+
+#logosm a img {
+    width: 100%;
+}
+
+article {
+    padding: 16px;
+    margin-top: 46px;
+}
+
+#recipes {
+    padding: 0px;
+}
+
+#rehead {
+    position: relative;
+    left: 0px;
+}
+
+#imgheadsm img {
+    display: block;
+    width: 100%;
+}
+
+#deshead {
+    background-color: #e7e7e7;
+    padding: 10px;
+}
+
+#imgheadbig {
+    display: none;
+}
+
+#deshead h1 {
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.25em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.details {
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+#recidetails {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#recidetails h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#recidetails ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 10px;
+}
+
+#ingredients,
+#preparation {
+    line-height: 1.5;
+    padding-top: 10px;
+    padding: 10px;
+}
+
+#ingredients li {
+    margin-bottom: 5px;
+}
+
+#preparation li {
+    margin-bottom: 20px;
+}
+
+.quantity,
+.step {
+    font-weight: 700;
+}
+
+footer {
+    background-color: #2271B8;
+    text-align: center;
+    color: #f9f9f9;
+    line-height: 2;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+#contentMargin {
+    margin: 5px 5px 0px 5px;
+}
+
+#recipesbody {
+    background-color: #e7e7e7;
+}
+
+.card {
+    width: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 215px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    text-decoration: none;
+    color: #1A2227;
+}
+
+.card h2 {
+    line-height: 1.5;
+    margin: 10px 5px 5px 5px;
+    overflow: hidden;
+    font-size: 16px;
+    height: 50px;
+}
+
+.cardimg {
+    position: relative;
+    overflow: hidden;
+    max-height: 168px;
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+
+.cardimg img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+}
+
+.cardimg img:hover {
+    opacity: 0.7;
+}
+
+.time {
+    line-height: 1.5;
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 5px 5px 0 5px;
+}
+
+#contentWrapper {
+    background-color: #e7e7e7;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 17px;
+}
+
+#contentWrapper h1 {
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.5;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Edibles */
+
+.containerEdibles {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+i.icon-medium {
+    position: relative;
+    margin-right: 6px;
+}
+
+.effects {
+    padding-top: 10px;
+    padding-left: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.badge:empty {
+    display: none;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.calcDes {
+    font-size: 18px;
+    font-weight: 450;
+    margin: 20px 0 20px 0;
+}
+
+i.icon-large {
+    position: relative;
+    margin-right: 6px;/*
+    top: 3px;*/
+}
+
+.badge-label {
+    margin: 3px;
+    font-size: 15px;
+    padding: 2px 7px 4px;
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: #348BD9;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #DC3545;
+}
+
+.small {
+    font-size: 14px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    #contentMargin {
+        margin: 5px 5px 0px 5px;
+    }
+    #recipesbody {
+        background-color: #e7e7e7;
+    }
+    .card {
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+        min-height: 1px;
+        float: left;
+    }
+    .card a {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        height: 250px;
+        margin-bottom: 20px;
+        background: #f9f9f9;
+        text-decoration: none;
+        color: #1A2227;
+    }
+    .card h2 {
+        line-height: 1.5;
+        margin: 10px 5px 5px 5px;
+        overflow: hidden;
+        font-size: 16px;
+        height: 40px;
+    }
+    .cardimg {
+        position: relative;
+        overflow: hidden;
+        max-height: 168px;
+        width: 100%;
+        height: auto;
+        font-size: 0;
+    }
+    .time {
+        line-height: 1.5;
+        color: #999;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 5px 5px 0 5px;
+    }
+    #contentWrapper {
+        background-color: #e7e7e7;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 17px;
+    }
+    #contentWrapper h1 {
+        background-color: #f9f9f9;
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.5;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    #navbig {
+        background-color: #1A2227;
+        overflow: hidden;
+        position: fixed;
+        display: block;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    #small {
+        display: none;
+    }
+    #big {
+        display: block;
+    }
+    #navbig ul {
+        width: 100%;
+    }
+    #navbig ul li {
+        display: inline;
+    }
+    #navbig a {
+        float: right;
+        color: #f9f9f9;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    #navbig ul a:hover {
+        background-color: #f9f9f9;
+        color: #1A2227;
+    }
+    #navbig ul a:active {
+        background-color: #2271B8;
+        color: #f9f9f9;
+    }
+    #navbig ul a:focus {
+        background-color: #2271B8;
+        color: #f9f9f9;
+    }
+    .active {
+        background-color: #2271B8;
+        color: #f9f9f9;
+    }
+    #logob {
+        width: 62px;
+        margin-left: 20px;
+        float: left;
+    }
+    #logob a {
+        margin: 3px;
+        padding: 0;
+    }
+    #logob a img {
+        width: 100%;
+    }
+    #recidetails {
+        padding-top: 20px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #ingredients {
+        float: left;
+        width: 30%
+    }
+    #preparation {
+        float: left;
+        width: 70%
+    }
+    #footer {
+        background-color: #2271B8;
+        text-align: center;
+        color: #f9f9f9;
+        line-height: 2;
+        margin-top: 200px;
+        position: absolute;
+        bottom: auto;
+        width: 100%;
+    }
+    #contentMargin {
+        margin: 10px 10px 0px 10px;
+    }
+    #recipesbody {
+        background-color: #e7e7e7;
+    }
+    .card {
+        width: 33%;
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+        min-height: 1px;
+        float: left;
+    }
+    .card a {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        height: 260px;
+        margin-bottom: 20px;
+        background: #f9f9f9;
+        text-decoration: none;
+        color: #1A2227;
+    }
+    .card h2 {
+        line-height: 1.5;
+        margin: 10px 5px;
+        overflow: hidden;
+        font-size: 18px;
+        height: 55px;
+    }
+    .cardimg {
+        position: relative;
+        overflow: hidden;
+        max-height: 168px;
+        width: 100%;
+        height: auto;
+        font-size: 0;
+    }
+    .time {
+        line-height: 1.5;
+        color: #999;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 5px 10px 0 10px;
+    }
+    #contentWrapper {
+        background-color: #e7e7e7;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 17px;
+    }
+    #contentWrapper h1 {
+        background-color: #f9f9f9;
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.5;
+        margin-top: 16px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    #navbig {
+        background-color: #1A2227;
+        overflow: hidden;
+        position: fixed;
+        display: block;
+        top: 0;
+        width: 100%;
+    }
+    #small {
+        display: none;
+    }
+    #big {
+        display: block;
+    }
+    #navbig ul {
+        width: 100%;
+    }
+    #navbig ul li {
+        display: inline;
+    }
+    #navbig a {
+        float: right;
+        color: #f9f9f9;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    #navbig ul a:hover {
+        background-color: #f9f9f9;
+        color: #1A2227;
+    }
+    #navbig ul a:active {
+        background-color: #2271B8;
+        color: #f9f9f9;
+    }
+    #navbig ul a:focus {
+        background-color: #2271B8;
+        color: #f9f9f9;
+    }
+    .active {
+        background-color: #2271B8;
+        color: #f9f9f9;
+    }
+    #logob {
+        width: 62px;
+        margin-left: 20px;
+        float: left;
+    }
+    #logob a {
+        margin: 3px;
+        padding: 0;
+    }
+    #logob a img {
+        width: 100%;
+    }
+    #recipes {
+        padding: 16px;
+        margin-top: 46px;
+        padding-top: 18px;
+    }
+    #rehead {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #e7e7e7;
+    }
+    #imgheadsm {
+        display: none;
+    }
+    #deshead {
+        width: 50%;
+        float: left;
+        height: 100%;
+    }
+    #imgheadbig {
+        display: block;
+        width: 50%;
+        margin-left: 50%;
+        background-color: #e7e7e7;
+    }
+    #imgheadbig img {
+        display: block;
+        width: 100%;
+    }
+    #contentMargin {
+        margin: 15px 15px 0px 15px;
+    }
+    #recipesbody {
+        background-color: #e7e7e7;
+    }
+    .card {
+        width: 25%;
+        padding-right: 15px;
+        padding-left: 15px;
+        position: relative;
+        min-height: 1px;
+        float: left;
+    }
+
+    .card a {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        height: 260px;
+        margin-bottom: 30px;
+        background: #f9f9f9;
+        text-decoration: none;
+        color: #1A2227;
+    }
+
+    .card h2 {
+        line-height: 1.5;
+        margin: 10px 5px;
+        overflow: hidden;
+        font-size: 20px;
+        height: 60px;
+    }
+
+    .cardimg {
+        position: relative;
+        overflow: hidden;
+        max-height: 168px;
+        width: 100%;
+        height: auto;
+        font-size: 0;
+    }
+    
+    .time {
+        line-height: 1.5;
+        color: #999;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 5px 10px 0 10px;
+    }
+    #contentWrapper {
+        background-color: #e7e7e7;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 17px;
+    }
+    #contentWrapper h1 {
+        background-color: #f9f9f9;
+        text-align: center;
+        font-size: 45px;
+        line-height: 1.5;
+        margin-top: 16px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    #contentMargin {
+        margin: 15px 35px 0px 35px;
+    }
+    #recipesbody {
+        background-color: #e7e7e7;
+    }
+    .card {
+        width: 25%;
+        padding-right: 15px;
+        padding-left: 15px;
+        position: relative;
+        min-height: 1px;
+        float: left;
+    }
+    .card a {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        height: 300px;
+        margin-bottom: 30px;
+        background: #f9f9f9;
+        text-decoration: none;
+        color: #1A2227;
+    }
+    .card h2 {
+        line-height: 1.5;
+        margin: 10px 5px;
+        overflow: hidden;
+        font-size: 20px;
+        height: 60px;
+    }
+    .cardimg {
+        position: relative;
+        overflow: hidden;
+        max-height: 168px;
+        width: 100%;
+        height: auto;
+        font-size: 0;
+    }
+    .time {
+        line-height: 1.5;
+        color: #999;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 5px 10px 0 10px;
+    }
+    #contentWrapper {
+        background-color: #e7e7e7;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 17px;
+    }
+    #contentWrapper h1 {
+        background-color: #f9f9f9;
+        text-align: center;
+        font-size: 45px;
+        line-height: 1.5;
+        margin-top: 16px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
